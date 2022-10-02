@@ -1,4 +1,5 @@
-### Hi there 👋
+### Here is OPTIMAX stroe portal.
+### Come from Commonwealth of Australia.
 
 <!--
 **SangSX/SangSX** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
