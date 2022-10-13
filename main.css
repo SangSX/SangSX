@@ -117,7 +117,7 @@ footer {
     top: -30px;
     left: 30px;
     background-image: url('img/logo.png');
-    filter: invert(88%) sepia(77%) saturate(579%) hue-rotate(330deg) brightness(99%) contrast(99%);
+    filter: invert(49%) sepia(13%) saturate(937%) hue-rotate(200deg) brightness(91%) contrast(81%);
     background-size: 100% 100%;
 }
 #nav-icon {
@@ -178,7 +178,7 @@ footer {
     position: relative;
     margin: 20px auto;
     padding: 6px 4px 0 2em;
-    border: 2px solid #15231b;
+    letter-spacing: 2px;
 }
 .f-i-icon {
     width: 1em;
@@ -200,29 +200,43 @@ footer {
     text-align: center;
     letter-spacing: 3vw;
     line-height: 2em;
-    padding: 2vw 0 0 0;
+    padding: 6vw 0 0 0;
+    margin: 0;
 }
 #brand-icon {
     width: 96vw;
-    height: fit-content;
+    height: 360px;
     position: relative;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    overflow: hidden;
+    transition: .8s;
+}
+#more-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: #abc5b5;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
 }
 #brand-icon div {
-    margin: 20px 0 20px 0;
-    height: 15vw;
-    width: 15vw;
-    background-color: #0e542c;
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20%;
 }
 #brand-icon > div > img {
-    width: 12vw;
+    width: 80px;
     height: auto;
 }
 #footer {
@@ -398,7 +412,7 @@ footer {
 .bar-img {
     width: 92vw;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     display: flex;
     justify-content: space-around;
 }
@@ -494,6 +508,12 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+    #top-title {
+        width: 120px;
+        height: 90px;
+        top: -15px;
+        left: 20px;
+    }
     #show-b {
         margin-top: 60px;
     }
@@ -525,7 +545,8 @@ footer {
     }
     .bar-main-img {
         width: 65vw;
-        height: 86vw;
+        height: 90vw;
+        margin-top: -3vw;
     }
     .bar-main-menu {
         width: 25vw;
@@ -543,6 +564,15 @@ footer {
         border-radius: 0;
     }
 
+    #brand-icon {
+        height: 220px;
+    }
+    #brand-icon > div {
+        height: 90px;
+        width: 90px;
+        margin: 10px;
+    }
+
     .row {
         min-height: 700px;
         height: 70vh;
@@ -558,7 +588,7 @@ footer {
         left: 0;
     }
     .story p {
-        width: 90vw;
+        width: 100vw;
     }
     #footer {
         max-width: 100vw;
