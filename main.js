@@ -82,3 +82,22 @@ const saleImg = document.getElementById("sale-img");
 const changeSaleImg = function(src = "img/sale1.jpg") {
     saleImg.setAttribute("src", src);
 }
+
+//brand-icon 事件处理
+let brandIcon = document.getElementById("brand-icon");
+let moreIcon = document.getElementById("more-icon");
+let brandIconMoment = false;
+const showAllIcon = function() {
+    if(brandIconMoment) {
+        moreIcon.innerHTML = "➕";
+        brandIcon.style.height = "";
+        console.log("+");
+        brandIconMoment = false;
+    }
+    else {
+        moreIcon.innerHTML = "➖";
+        console.log("-");
+        brandIcon.style.height = "fit-content";
+        brandIconMoment = true;
+    }
+}
