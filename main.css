@@ -16,33 +16,6 @@ footer {
     background-color: #00000000;
     margin-top: -340px;
 }
-#about-us {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    right: -100vw;
-    z-index: 99999;
-    background-color: #f3f3f3;
-    overflow-y: scroll;
-    transition: .6s;
-}
-.close-about {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    z-index: 99;
-}
-.close-about:hover {
-    background-color: #d1c7c7cb;
-}
-.close-about > svg {
-    width: 40px;
-    height: 40px;
-}
 
 #go-top {
     width: 80px;
@@ -101,31 +74,30 @@ footer {
 }
 #top-nav {
     width: 100vw;
-    height: 60px;
+    height: 90px;
     position: fixed;
     top: 0;
     z-index: 10;
     transition: .6s;
 }
 #top-nav:hover {
-    background: #15231b99;
+    background: #1b231e;
 }
 #top-title {
-    width: 160px;
-    height: 120px;
+    width: 400px;
+    height: 200px;
     position: absolute;
-    top: -30px;
+    top: 10px;
     left: 30px;
-    background-image: url('img/logo.png');
-    filter: invert(49%) sepia(13%) saturate(937%) hue-rotate(200deg) brightness(91%) contrast(81%);
+    background-image: url('img/logo2.png');
     background-size: 100% 100%;
 }
 #nav-icon {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 6px;
-    right: 10px;
+    top: 16px;
+    right: 20px;
     display: none;
     cursor: pointer;
 }
@@ -179,6 +151,7 @@ footer {
     margin: 20px auto;
     padding: 6px 4px 0 2em;
     letter-spacing: 2px;
+    display: none;
 }
 .f-i-icon {
     width: 1em;
@@ -348,6 +321,7 @@ footer {
     height: 60px;
     line-height: 60px;
     font-size: 20px;
+    margin-top: 20px;
     font-weight: 800;
     text-align: center;
     color: #ede3e7;
@@ -369,7 +343,6 @@ footer {
 }
 .li:hover {
     background-color: #3b454b;
-    text-decoration: #8b614d wavy underline;
     box-shadow: 1px 2px 8px #686262;
     color: #f6dcce;
 }
@@ -419,15 +392,23 @@ footer {
 .bar-main {
     width: 32vw;
     height: 30vw;
-    display: flex;
-    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
 }
 .bar-main-img {
     width: 20vw;
     height: 30vw;
+    position: absolute;
+    right:  10vw;
+    transition: .6s;
+    z-index: 9;
 }
+.top-over { top: -120vw;}
+.top-zero { top: 0;}
 .bar-main-menu {
     width: 9vw;
+    position: absolute;
+    right: 0;
 }
 .bar-main-menu li {
     line-height: 2.4em;
@@ -509,10 +490,8 @@ footer {
 
 @media screen and (max-width: 900px) {
     #top-title {
-        width: 120px;
-        height: 90px;
-        top: -15px;
-        left: 20px;
+        max-width: 60vw;
+        max-height: 30vw;
     }
     #show-b {
         margin-top: 60px;
@@ -546,7 +525,7 @@ footer {
     .bar-main-img {
         width: 65vw;
         height: 90vw;
-        margin-top: -3vw;
+        right: 24vw;
     }
     .bar-main-menu {
         width: 25vw;
