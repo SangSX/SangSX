@@ -103,7 +103,7 @@ footer {
 }
 #m-nav {
     width: 300px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 90px);
     position: fixed;
     top: 60px;
     right: 0;
@@ -494,7 +494,7 @@ footer {
         max-height: 30vw;
     }
     #show-b {
-        margin-top: 60px;
+        margin-top: 90px;
     }
     #nav-icon {
         display: block;
