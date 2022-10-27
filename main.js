@@ -68,19 +68,13 @@ const showBgBox = () => {
     bgBox.style.display = "flex";
 }
 
-//about-us 事件处理
-const aboutUs = document.getElementById("about-us");
-const closeAbout = () => {
-    aboutUs.style.right = "-100vw";
-}
-const openAbout = () => {
-    aboutUs.style.right = "0";
-}
-
 //bar-img 事件处理
-const saleImg = document.getElementById("sale-img");
-const changeSaleImg = function(src = "img/sale1.jpg") {
-    saleImg.setAttribute("src", src);
+idList = ['sale-img1', 'sale-img2']
+const changeSaleImg = function(idName) {
+    for(let i=0; i<idList.length; i++) {
+        document.getElementById(idList[i]).className = 'bar-main-img top-over';
+    }
+    document.getElementById(idName).className = 'bar-main-img top-zero';
 }
 
 //brand-icon 事件处理
