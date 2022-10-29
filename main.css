@@ -492,7 +492,8 @@ footer {
 @media screen and (max-width: 900px) {
     #top-title {
         max-width: 60vw;
-        max-height: 30vw;
+        max-height: 15vw;
+        margin-top: 16px;
     }
     #show-b {
         margin-top: 90px;
@@ -505,6 +506,20 @@ footer {
     }
     #m-nav {
         display: block;
+    }
+    #go-top {
+        height: 35px;
+        width: 40px;
+        font-size: 24px;
+        line-height: 35px;
+        padding-top: 5px;
+        bottom: 80px;
+    }
+    #pop-card-but {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+        line-height: 40px;
     }
     .r-nav {
         display: none;
@@ -521,7 +536,7 @@ footer {
     }
     .bar-main {
         width: 98vw;
-        height: 80vw;
+        height: 88vw;
     }
     .bar-main-img {
         width: 65vw;
