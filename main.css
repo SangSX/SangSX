@@ -85,7 +85,7 @@ footer {
 }
 #top-title {
     width: 500px;
-    height: 200px;
+    height: 100px;
     position: absolute;
     top: 10px;
     left: 30px;
@@ -105,7 +105,7 @@ footer {
     width: 300px;
     height: calc(100vh - 90px);
     position: fixed;
-    top: 60px;
+    top: 90px;
     right: 0;
     background-color: #57675e;
     z-index: 1000;
@@ -330,11 +330,12 @@ footer {
     transition: .6s;
 }
 .li {
-    width: 160px;
+    width: 200px;
     height: 3em;
     margin-left: -20px;
     line-height: 3em;
     color: #baccd9;
+    font-size: 16px;
     text-align: center;
     display: none;
     padding: 0 1em 0 1em;
