@@ -279,6 +279,9 @@ footer {
     position: relative;
     margin: 40px auto 80px auto;
 }
+.my-brand {
+    height: 300px;
+}
 .info-a {
     position: absolute;
     top: 0;
@@ -303,16 +306,14 @@ footer {
     width: 60%;
 }
 
-
-
 .r-nav {
     position: absolute;
-    right: 40px;
+    right: 30px;
     display: flex;
     justify-content: center;
 }
 .nav-box {
-    width: 160px;
+    width: 120px;
     color: #000000;
     cursor: pointer;
 }
@@ -326,7 +327,7 @@ footer {
     text-align: center;
     color: #ede3e7;
     display: inline-block;
-    padding: 0 1em 0 1em;
+    padding: 0;
     transition: .6s;
 }
 .li {
@@ -419,6 +420,33 @@ footer {
     color: #0e542c;
 }
 
+#my-brand {
+    height: fit-content ;
+    position: relative;
+    padding: 90px 0  90px 0;
+    background-color: #455a4f;
+}
+.row-h {
+    width: 800px;
+    position: relative;
+    margin: 0 auto 2em auto;
+    text-align: center;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 1em;
+    color: #e1de88;
+}
+.row-p {
+    width: 800px;
+    position: relative;
+    margin: 10px auto;
+    text-indent: 2em;
+    font-size: 20px;
+    line-height: 1.5em;
+    letter-spacing: 3px;
+    text-align: justify;
+    color: #d8efe8;
+}
 
 .f-col {
     min-width: 8em;
@@ -568,9 +596,16 @@ footer {
         margin: 10px;
     }
 
+    .row-h {
+        width: 90vw;
+    }
+
+    .row-p {
+        width: 94vw;
+    }
+
     .row {
-        min-height: 700px;
-        height: 70vh;
+        height: 800px;
     }
     .info-a {
         width: 90vw;
