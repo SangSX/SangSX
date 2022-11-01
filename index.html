@@ -22,7 +22,7 @@
         <div onclick="closePopCard()">关闭</div>
         <h1>新店开张期间有特殊优惠！欢迎光临哦🎉🎉🎉</h1>
     </div>
-    <div id="m-nav" style="right: -300px;" class="blur">
+    <div id="m-nav" style="right: -300px;" class="blur" onclick="mNavEvent()">
         <div>
             <a><div class="nav-name">在线预约</div></a>
         </div>
@@ -34,7 +34,7 @@
             <div class="m-li">品牌镜框</div>
             <div class="m-li">品牌镜片</div>
             <div class="m-li">隐形眼镜</div>
-            <div class="m-li">自由品牌</div>
+            <a href="#my-brand"><div class="m-li">自有品牌</div></a>
         </div>
         <div>
             <div class="nav-name">服务</div>
@@ -89,7 +89,7 @@
                         <div class="li blur">品牌镜框</div>
                         <div class="li blur">品牌镜片</div>
                         <div class="li blur">隐形眼镜</div>
-                        <div class="li blur">自由品牌</div>
+                        <a href="#my-brand"><div class="li blur">自有品牌</div></a>
                     </div>
                 </div>
                 <div class="nav-box">
@@ -190,12 +190,6 @@
             <div id="more-icon" onclick="showAllIcon()">➕</div>
         </div><br/>
     </section>
-    <div class="my-brand">
-        <h3>自有品牌</h3>
-        <p>Optimax在眼镜行业已有30年扎实积淀，拥有独家眼镜镜框，镜片的专业供链，掌握着第一手优且全的眼镜产品资源。为了给客人提供更适合佩戴而高性价比高的眼科产品，和光甄选和整合了多年合作的品质镜框及镜片品牌，设计和推出了符合本地消费者最为适用的不同价格档位的最优产品。</p>
-        <p>在当下市场，Optimax自有品牌系列，具有质量上乘，价位最优，佩戴大方且美观等多方面具有竞争力的优势，一定能给顾客带来不一样的满意体验。</p>
-        <p>感谢每一位客人对Optimax的信赖，Optimax一定不负众望，力争更优，更好。</p>
-    </div>
     <div class="row">
         <div class="info-a">
             <iframe class="map-pos" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5676396032286!2d114.1726738774498!3d22.294385221889105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340401f3df81a725%3A0x61c4906c6fa6e132!2sK11%20MUSEA!5e0!3m2!1szh-CN!2shk!4v1664023984746!5m2!1szh-CN!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -212,6 +206,12 @@
             <p>覆盖常见眼科疾病测试</p>
         <a href="tel:18888888888"><div class="book-but">来电咨询</div></a>
         </div>
+    </div>
+    <div id="my-brand">
+        <div class="row-h">自有品牌</div>
+        <div class="row-p">Optimax在眼镜行业已有30年扎实积淀，拥有独家眼镜镜框，镜片的专业供链，掌握着第一手优且全的眼镜产品资源。为了给客人提供更适合佩戴而高性价比高的眼科产品，和光甄选和整合了多年合作的品质镜框及镜片品牌，设计和推出了符合本地消费者最为适用的不同价格档位的最优产品。</div>
+        <div class="row-p">在当下市场，Optimax自有品牌系列，具有质量上乘，价位最优，佩戴大方且美观等多方面具有竞争力的优势，一定能给顾客带来不一样的满意体验。</div>
+        <div class="row-p">感谢每一位客人对Optimax的信赖，Optimax一定不负众望，力争更优、更好。</div>
     </div>
     <div class="top-video">
         <video muted autoplay loop >
