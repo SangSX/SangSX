@@ -28,7 +28,6 @@
             padding: 0;
         }
         .text-ul li {
-            color: #15231b;
             text-align: center;
             font-size: 28px;
             line-height: 36px;
@@ -88,7 +87,7 @@
     </style>
 </head>
 <body>
-    <div id="m-nav" style="right: -300px;" class="blur">
+    <div id="m-nav" style="right: -300px;" class="blur" onclick="mNavEvent()">
         <div>
             <a><div class="nav-name">在线预约</div></a>
         </div>
@@ -100,7 +99,7 @@
             <div class="m-li">品牌镜框</div>
             <div class="m-li">品牌镜片</div>
             <div class="m-li">隐形眼镜</div>
-            <div class="m-li">自由品牌</div>
+            <a href="#my-brand"><div class="m-li">自有品牌</div></a>
         </div>
         <div>
             <div class="nav-name">服务</div>
@@ -139,6 +138,67 @@
             <div id="nav-icon" onclick="mNavEvent()">
                 <svg t="1661308771911" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3507" width="48" height="48"><path d="M512 1024a512 512 0 1 1 512-512 512 512 0 0 1-512 512z m0-992a480 480 0 1 0 480 480A480 480 0 0 0 512 32zM320 624h384v32H320v-32z m0-128h384v32H320v-32z m0-128h384v32H320v-32z" p-id="3508" fill="#e6e6e6"></path></svg>
             </div>
+            <a href="#show-b"><div id="top-title"></div></a>
+            <div class="r-nav">
+                <div class="nav-box">
+                    <a href="about.html">
+                        <div class="nav-name" onclick="openAbout()">
+                            <span>关于我们</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="nav-box">
+                    <div class="nav-name">
+                        <span>产品</span>
+                        <div class="li blur">品牌镜框</div>
+                        <div class="li blur">品牌镜片</div>
+                        <div class="li blur">隐形眼镜</div>
+                        <a href="#my-brand"><div class="li blur">自有品牌</div></a>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="nav-name">
+                        <span>服务</span>
+                        <div class="li blur">眼科全面检查</div>
+                        <div class="li blur">近视防控|儿童视力检查</div>
+                        <div class="li blur">青光眼检查|白内障检查</div>
+                        <div class="li blur">糖尿病眼科检查|散瞳检查</div>
+                        <div class="li blur">OTC视网膜3D扫描</div>
+                        <div class="li blur">广角眼底扫描</div>
+                        <div class="li blur">视野检查|生物测量检查</div>
+                        <div class="li blur">眼压测试</div>
+                        <div class="li blur">干眼症和其他常见眼科症状</div>
+                        <div class="li blur">隐形眼镜配戴测试</div>
+                        <div class="li blur">私人保险报销</div>
+                        <div class="li blur">配镜立等可取</div>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="nav-name">
+                        <span>联系方式</span>
+                        <a href="tel:18888888888">
+                            <div class="li blur">📱18888888888</div>
+                        </a>
+                        <a href="mailto:boss@gmail.com">
+                            <div class="li blur">boss@gmail.com</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <a href="#">
+                        <div class="nav-name" onclick=";">
+                            <span>在线预约</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <header>
+        <div id="top-nav">
+            <div id="nav-icon" onclick="mNavEvent()">
+                <svg t="1661308771911" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3507" width="48" height="48"><path d="M512 1024a512 512 0 1 1 512-512 512 512 0 0 1-512 512z m0-992a480 480 0 1 0 480 480A480 480 0 0 0 512 32zM320 624h384v32H320v-32z m0-128h384v32H320v-32z m0-128h384v32H320v-32z" p-id="3508" fill="#e6e6e6"></path></svg>
+            </div>
             <a href="index.html"><div id="top-title"></div></a>
             <div class="r-nav">
                 <div class="nav-box">
@@ -155,7 +215,7 @@
                         <div class="li blur">品牌镜框</div>
                         <div class="li blur">品牌镜片</div>
                         <div class="li blur">隐形眼镜</div>
-                        <div class="li blur">自由品牌</div>
+                        <div class="li blur">自有品牌</div>
                     </div>
                 </div>
                 <div class="nav-box">
