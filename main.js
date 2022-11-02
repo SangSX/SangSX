@@ -76,7 +76,7 @@ function changeImgC(index, loop) {
     for(i=0; i<urlListC.length; i++) {
         menu[i].style.backgroundColor = "#d3d3d3";
     }
-    menu[index].style.backgroundColor = "#99eeff";
+    menu[index].style.backgroundColor = "#b1b876";
     domC.style.backgroundImage = "url('" + urlListC[index%urlList.length] + "')";
     index = ++index%urlListC.length;
     if(loop) {
