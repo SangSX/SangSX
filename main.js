@@ -69,13 +69,24 @@ const showBgBox = () => {
 }
 
 //bar-img 事件处理
-idList = ['sale-img1', 'sale-img2']
-const changeSaleImg = function(idName) {
-    for(let i=0; i<idList.length; i++) {
-        document.getElementById(idList[i]).className = 'bar-main-img top-over';
+let urlListC = ['img/sale43a.jfif', 'img/sale43b.jfif'];
+let domC = document.getElementById("show-c");
+function changeImgC(index, loop) {
+    let menu = document.getElementById("c-menu").children;
+    for(i=0; i<urlListC.length; i++) {
+        menu[i].style.backgroundColor = "#d3d3d3";
     }
-    document.getElementById(idName).className = 'bar-main-img top-zero';
+    menu[index].style.backgroundColor = "#99eeff";
+    domC.style.backgroundImage = "url('" + urlListC[index%urlList.length] + "')";
+    index = ++index%urlListC.length;
+    if(loop) {
+        setTimeout( () => { changeImgC(index, true)}, 4000)
+    }
 }
+let menuContent = "";
+for(let i=0; i<urlListC.length; i++) { menuContent += "<div onclick='changeImgC(" + i + ", false)'></div>";}
+document.getElementById("c-menu").innerHTML = menuContent;
+changeImgC(0, true);
 
 //brand-icon 事件处理
 let brandIcon = document.getElementById("brand-icon");
