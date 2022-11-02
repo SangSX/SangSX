@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/op.png" type="image/x-icon">
+    <title>OPTIMAX | About us</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body { 
+            margin: 0;
+            background-color: #455a4f;
+        }
+        #logo {
+            width: 360px;
+            height: 90px;
+            position: relative;
+            top: 80px;
+            margin: 50px auto 0 auto;
+            background-image: url("img/logo2.png");
+            background-size: 100% 100%;
+            background-color: #455a4f;
+        }
+        .text-ul {
+            width: 70vw;
+            margin: 90px auto;
+            padding: 0;
+        }
+        .text-ul li {
+            text-align: center;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 3px;
+            font-weight: 800;
+            list-style: none;
+            margin-top: 2em;
+            color: #e1de88;
+        }
+        .text-ul p {
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 30px;
+            text-indent: 2em;
+            padding: 10px 1em 10px 1em;
+            color: #d8efe8;
+            text-align: justify;
+            padding: 0;
+        }
+        .text-ul hr {
+            width: 30%;
+            margin: 2em auto 2em auto;
+        }
+        .footer {
+            min-height: 100px;
+            width: fit-content;
+            position: relative;
+            margin: 0 auto;
+        }
+        .center-img {
+            width: fit-content;
+            position: relative;
+            margin: 2em auto;
+        }
+        .center-img > img {
+            width: 600px;
+            height: auto;
+        }
+        @media screen and (max-width: 900px) {
+            #logo {
+                width: 280px;
+                height: 70px;
+            }
+            .text-ul {
+                width: 94vw;
+            }
+            .text-ul li {
+                margin-top: 1.2em;
+            }
+            .text-ul p {
+                font-size: 17px;
+            }
+            .center-img > img {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#logo"><div id="go-top" style="display: none;"><span>^</span></div></a>
+    <div id="m-nav" style="right: -300px;" class="blur" onclick="mNavEvent()">
+        <div>
+            <a><div class="nav-name">在线预约</div></a>
+        </div>
+        <div>
+            <a href="about.html"><div class="nav-name">关于我们</div></a>
+        </div>
+        <div>
+            <div class="nav-name">产品</div>
+            <div class="m-li">品牌镜框</div>
+            <div class="m-li">品牌镜片</div>
+            <div class="m-li">隐形眼镜</div>
+            <a href="#my-brand"><div class="m-li">自有品牌</div></a>
+        </div>
+        <a href="sever.html">
+        <div>
+            <div class="nav-name">服务</div>
+            <div class="li blur">眼科全面检查</div>
+            <div class="m-li">近视防控|儿童视力检查</div>
+            <div class="m-li">青光眼检查|白内障检查</div>
+            <div class="m-li">糖尿病眼科检查|散瞳检查</div>
+            <div class="m-li">OTC视网膜3D扫描</div>
+            <div class="m-li">广角眼底扫描</div>
+            <div class="m-li">视野检查|生物测量检查</div>
+            <div class="m-li">眼压测试</div>
+            <div class="m-li">干眼症和其他常见眼科症状</div>
+            <div class="m-li">隐形眼镜配戴测试</div>
+            <div class="m-li">私人保险报销</div>
+            <div class="m-li">配镜立等可取</div>
+        </div></a>
+        <div>
+            <div class="nav-name">促销活动</div>
+            <div class="m-li">每日优惠</div>
+            <div class="m-li">节日优惠</div>
+        </div>
+        
+        <div>
+            <div class="nav-name">联系方式</div>
+            <a href="tel:18888888888">
+                <div class="m-li">📱18888888888</div>
+            </a>
+            <a href="mailto:boss@gmail.com">
+                <div class="m-li">boss@gmail.com</div>
+            </a>
+            <div class="m-li"></div>
+        </div>
+    </div>
+<header>
+    <div id="top-nav">
+        <div id="nav-icon" onclick="mNavEvent()">
+            <svg t="1661308771911" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3507" width="48" height="48"><path d="M512 1024a512 512 0 1 1 512-512 512 512 0 0 1-512 512z m0-992a480 480 0 1 0 480 480A480 480 0 0 0 512 32zM320 624h384v32H320v-32z m0-128h384v32H320v-32z m0-128h384v32H320v-32z" p-id="3508" fill="#e6e6e6"></path></svg>
+        </div>
+        <a href="#show-b"><div id="top-title"></div></a>
+        <div class="r-nav">
+            <div class="nav-box">
+                <a href="about.html">
+                    <div class="nav-name" onclick="openAbout()">
+                        <span>关于我们</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav-box">
+                <div class="nav-name">
+                    <span>产品</span>
+                    <div class="li blur">品牌镜框</div>
+                    <div class="li blur">品牌镜片</div>
+                    <div class="li blur">隐形眼镜</div>
+                    <a href="#my-brand"><div class="li blur">自有品牌</div></a>
+                </div>
+            </div>
+            <div class="nav-box">
+                <a href="sever.html">
+                <div class="nav-name">
+                    <span>服务</span>
+                    <div class="li blur">眼科全面检查</div>
+                    <div class="li blur">近视防控|儿童视力检查</div>
+                    <div class="li blur">青光眼检查|白内障检查</div>
+                    <div class="li blur">糖尿病眼科检查|散瞳检查</div>
+                    <div class="li blur">OTC视网膜3D扫描</div>
+                    <div class="li blur">广角眼底扫描</div>
+                    <div class="li blur">视野检查|生物测量检查</div>
+                    <div class="li blur">眼压测试</div>
+                    <div class="li blur">干眼症和其他常见眼科症状</div>
+                    <div class="li blur">隐形眼镜配戴测试</div>
+                    <div class="li blur">私人保险报销</div>
+                    <div class="li blur">配镜立等可取</div>
+                </div></a>
+            </div>
+            <div class="nav-box">
+                <div class="nav-name">
+                    <span>联系方式</span>
+                    <a href="tel:18888888888">
+                        <div class="li blur">📱18888888888</div>
+                    </a>
+                    <a href="mailto:boss@gmail.com">
+                        <div class="li blur">boss@gmail.com</div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-box">
+                <a href="#">
+                    <div class="nav-name" onclick=";">
+                        <span>在线预约</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<header>
+    <div id="top-nav">
+        <div id="nav-icon" onclick="mNavEvent()">
+            <svg t="1661308771911" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3507" width="48" height="48"><path d="M512 1024a512 512 0 1 1 512-512 512 512 0 0 1-512 512z m0-992a480 480 0 1 0 480 480A480 480 0 0 0 512 32zM320 624h384v32H320v-32z m0-128h384v32H320v-32z m0-128h384v32H320v-32z" p-id="3508" fill="#e6e6e6"></path></svg>
+        </div>
+        <a href="index.html"><div id="top-title"></div></a>
+        <div class="r-nav">
+            <div class="nav-box">
+                <a href="about.html">
+                    <div class="nav-name" onclick="openAbout()">
+                        <span>关于我们</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav-box">
+                <div class="nav-name">
+                    <span>产品</span>
+                    <div class="li blur">品牌镜框</div>
+                    <div class="li blur">品牌镜片</div>
+                    <div class="li blur">隐形眼镜</div>
+                    <div class="li blur">自有品牌</div>
+                </div>
+            </div>
+            <div class="nav-box">
+                <div class="nav-name">
+                    <span>服务</span>
+                    <div class="li blur">眼科全面检查</div>
+                    <div class="li blur">近视防控|儿童视力检查</div>
+                    <div class="li blur">青光眼检查|白内障检查</div>
+                    <div class="li blur">糖尿病眼科检查|散瞳检查</div>
+                    <div class="li blur">OTC视网膜3D扫描</div>
+                    <div class="li blur">广角眼底扫描</div>
+                    <div class="li blur">视野检查|生物测量检查</div>
+                    <div class="li blur">眼压测试</div>
+                    <div class="li blur">干眼症和其他常见眼科症状</div>
+                    <div class="li blur">隐形眼镜配戴测试</div>
+                    <div class="li blur">私人保险报销</div>
+                    <div class="li blur">配镜立等可取</div>
+                </div>
+            </div>
+            <div class="nav-box">
+                <div class="nav-name">
+                    <span>联系方式</span>
+                    <a href="tel:18888888888">
+                        <div class="li blur">📱18888888888</div>
+                    </a>
+                    <a href="mailto:boss@gmail.com">
+                        <div class="li blur">boss@gmail.com</div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-box">
+                <a href="#">
+                    <div class="nav-name" onclick=";">
+                        <span>在线预约</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+    <a href="index.html"><div id="logo"></div></a>
+    <div>
+        <ul class="text-ul">
+            <li>全面眼科检查</li>
+            <p>Optimax专注于为每一位尊贵的客人提供高水准和专业的眼科保健服务。为了达成这一目标，Optimax优秀的验光师的首要任务即为向您提供全面的眼科检查服务。</p>
+            <li>全面眼科检查的内容和重要性</li>
+            <p>定期眼科检查包括项目：病史采集，视力和度数核对，外眼和内眼健康检查，眼健康审查和长期管理干预计划。</p>
+            <p>定期的全面眼科检查不仅能帮助您决定是否需要佩戴框架或隐形眼镜，也能帮助您在早期阶段发现和干预大多数眼科疾病，这对于眼科疾病的防治尤为重要。</p>
+            <li>检查注意事项</li>
+            <p>Optimax细致贴心的全面眼科检查服务将花费30分钟左右的时间。如果您是初次来访Optimax享受验光服务，请您提前10分钟到达，以便我们为您建立新的看诊档案。</p>
+            <div class="center-img"><img src="img/sever1.jpg" /></div>
+            <li>费用问题</li>
+            <p>Optimax大部分常规全面眼科检查都为Bulkbilling报销项目，由Medicare承担，无需您额外支付费用。</p>
+            <P>对于持有私人保险的澳大利亚留学生与访客，根据不同保险公司的相关政策，您可能可以报销全面眼科检查的费用。</P>
+            <hr />
+            
+            <li>近视防控服务</li>
+            <p>近年来，随着越来越多客户用眼强度的加大，许多客人可能在较早年龄即面临了近视问题，并且被持续快速加深的度数困扰，所以，在发现近视之后，进行早期近视防控显得尤为重要，它能帮助客人减缓或停止度数的急剧变化，维护您的视力水平，呵护您的眼部健康。</p>
+            <p>而在近视防控的过程中，有经验且专业的验光师，结合先进和精准的机器等辅助支持器材为您制定合理且有效的眼科诊疗服务尤为重要。</p>
+            <P>作为Optimax的特色金牌服务，Optimax所聘请的专业验光师除了已完成了澳大利亚高等学府开设的医科验光师专业学习外，都还另外进修并完成了澳大利亚专业学位认可的近视防控相关课程学习，取得相关职业技能证书。并且都在一线服务客户，具备多年专业近视防控工作经验，能够根据不同客人的实际情况和需求，提供因人而异的诊疗方案。</P>
+            <p>同时，Optimax始终选择最高水准的全新设备，保持更新我们的诊疗手段，例如Optimax特别购入专业设备为需近视防控的客人提供特有的生物测量眼轴检查服务，让客人可以随时享受最优质的服务，拥有最优的视野。</p>
+            <div class="center-img"><img src="img/sever2.jpg" /></div>
+            <li>其他眼科检查服务</li>
+            <p>Optimax不仅为所有客人提供专业而全面的基础眼科检查服务，也能够根据您的需求提供更加细致和贴切的专项定制眼科检查服务。</p>
+            <p>我们所提供的定制化专项眼科服务包括却不止于：青光眼检查，干眼症治疗，糖尿病眼科检查，OCT视网膜防控，视野检查，隐形眼镜佩戴……</p>
+            <p>无论您遇到什么眼科问题，都可以信赖Optimax，我们一定竭诚给您提供最优质的眼科诊疗服务。</p>
+            <li>私人保险报销</li>
+            <p>Optimax店内的配镜服务，隐形眼镜适配服务，以及大部分近视防控产品购置服务都可以享受众多私人保险报销，可报销保险公司包括但不限于以下公司</p>
+            <div class="center-img"><img src="img/severA6.png" /></div>
+            <li>立等可取服务</li>
+            <p>Optimax始终以满足客户需求为已任，我们深谙您宝贵时间的价值，为了帮助您迅速佩戴到心仪的眼镜，免去您冗长的等待。Optimax特别提供店内立等可取业务，选择高档次，高性价比的镜片，以满足大部分客户的不时之需。（镜片限制在本店现有存货）</p>
+        </ul>
+    </div>
+    <div class="footer"></div>
+    <script src="main.js"></script>
+</body>
+</html>
