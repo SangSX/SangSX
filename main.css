@@ -385,39 +385,36 @@ footer {
     border: 2px solid #0e542c;
 }
 .bar-img {
-    width: 92vw;
+    width: fit-content;
     position: relative;
     margin: 0 auto 30px auto;
-    display: flex;
-    justify-content: space-around;
 }
-.bar-main {
-    width: 32vw;
-    height: 30vw;
+#show-c {
+    width: 800px;
+    height: 600px;
     position: relative;
-    overflow: hidden;
+    display: block;
+    background-image: url("img/sale43a.jfif");
+    background-size: 100% 100%;
 }
-.bar-main-img {
-    width: 20vw;
-    height: 30vw;
-    position: absolute;
-    right:  10vw;
-    transition: .6s;
-    z-index: 9;
+#c-menu {
+    height: 50px;
+    width: fit-content;
+    position: relative;
+    top: 560px;
+    margin: 0 auto;
 }
-.top-over { top: -120vw;}
-.top-zero { top: 0;}
-.bar-main-menu {
-    width: 9vw;
-    position: absolute;
-    right: 0;
-}
-.bar-main-menu li {
-    line-height: 2.4em;
+#c-menu > div {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 4px;
     cursor: pointer;
-}
-.bar-main-menu li:hover {
-    color: #0e542c;
+    border: #a09abc 1px solid;
+    border-radius: 9px;
+    background-color: #e9e9e9;
+    box-shadow: #d3d3d3 0px 3px 5px;
+    transition: .6s;
 }
 
 #my-brand {
@@ -553,31 +550,18 @@ footer {
         display: none;
     }
     .bar-img {
-        flex-wrap: wrap;
-        height: 140vw;
-        margin-bottom: 20px;
+        width: fit-content;
+        height: fit-content;
+        position: relative;
     }
-    .bar-info {
-        width: 94vw;
-        height: 47vw;
-        margin-bottom: 20px;
+    #show-c {
+        width: 100vw;
+        height: 75vw;
     }
-    .bar-main {
-        width: 98vw;
-        height: 88vw;
+    #c-menu {
+        top: calc(75vw - 50px);
     }
-    .bar-main-img {
-        width: 65vw;
-        height: 90vw;
-        right: 24vw;
-    }
-    .bar-main-menu {
-        width: 25vw;
-    }
-    .bar-main-menu li {
-        font-size: 1.2em;
-        line-height: 2em;
-    }
+    
     .f-col {
         min-width: 40vw;
         padding-left: 10vw;
