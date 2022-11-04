@@ -583,14 +583,16 @@ footer {
     }
 
     #brand-icon {
-        height: 220px;
+        height: 290px;
     }
     #brand-icon > div {
         height: 90px;
         width: 90px;
         margin: 10px;
     }
-
+    #brand-icon > div > img {
+        width: 80px;
+    }
     .row-h {
         width: 90vw;
     }
