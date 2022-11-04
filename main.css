@@ -176,9 +176,20 @@ footer {
     padding: 6vw 0 0 0;
     margin: 0;
 }
+#brand-box  h3 {
+    width: 100vw;
+    color: #d8e99d;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1vw;
+    line-height: 2em;
+    padding: 1em 0 0 0;
+    margin: 0;
+}
 #brand-icon {
     width: 96vw;
-    height: 360px;
+    height: 450px;
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -209,7 +220,7 @@ footer {
     border-radius: 20%;
 }
 #brand-icon > div > img {
-    width: 80px;
+    width: 120px;
     height: auto;
 }
 #footer {
