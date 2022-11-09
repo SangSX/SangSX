@@ -189,7 +189,7 @@ footer {
 }
 #brand-icon {
     width: 96vw;
-    height: fit-content;
+    height: 270px;
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -289,9 +289,6 @@ footer {
     height: 40vw;
     position: relative;
     margin: 40px auto 80px auto;
-}
-.my-brand {
-    height: 300px;
 }
 .info-a {
     position: absolute;
