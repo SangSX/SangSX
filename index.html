@@ -25,9 +25,9 @@
 
     <!--导航栏部分--menu start-->
 
-    <div id="m-nav" style="right: -300px;" class="blur" onclick="mNavEvent()">
+    <div id="m-nav" style="right: -300px;" onclick="mNavEvent()">
         <div>
-            <a><div class="nav-name">在线预约</div></a>
+            <a href="book.html"><div class="nav-name">在线预约</div></a>
         </div>
         <div>
             <a href="about.html"><div class="nav-name">关于我们</div></a>
@@ -73,8 +73,13 @@
             <a href="mailto:boss@gmail.com">
                 <div class="m-li">boss@gmail.com</div>
             </a>
-            <div class="m-li"></div>
-        </div>
+            <a href="https://www.facebook.com/profile.php?id=100087103927812">
+                <div class="m-li">🚀FaceBook</div>
+            </a>
+            <a href="https://www.instagram.com/optimaxoptometrists/">
+                <div class="m-li">📷Instagram</div>
+            </a>
+        </div><br/>
     </div>
     <header>
         <div id="top-nav">
@@ -94,7 +99,7 @@
                 <div class="nav-box">
                     <div class="nav-name">
                         <span>产品</span>
-                        <a href="sever.html">
+                        <a href="brand.html">
                         <div class="li blur">品牌镜框</div>
                         <div class="li blur">品牌镜片</div>
                         <div class="li blur">隐形眼镜</div>
@@ -130,10 +135,16 @@
                         <a href="mailto:boss@gmail.com">
                             <div class="li blur">boss@gmail.com</div>
                         </a>
+                        <a href="https://www.facebook.com/profile.php?id=100087103927812">
+                            <div class="li blur">🚀FaceBook</div>
+                        </a>
+                        <a href="https://www.instagram.com/optimaxoptometrists/">
+                            <div class="li blur">📷Instagram</div>
+                        </a>
                     </div>
                 </div>
                 <div class="nav-box">
-                    <a href="#">
+                    <a href="book.html">
                         <div class="nav-name" onclick=";">
                             <span>在线预约</span>
                         </div>
@@ -163,14 +174,50 @@
         <div id="brand-box">
             <h2>合作品牌</h2>
             <div id="brand-icon">
+                <h3>品牌镜框</h3>
                 <div><img src="img/LOGO/Gucci-Logo.png" /></div>
                 <div><img src="img/LOGO/Karen-Walker-logo.png" /></div>
                 <div><img src="img/LOGO/Emporio-Armani-logo.jpeg" /></div>
                 <div><img src="img/LOGO/Burberry-Logo-2018-present.jpeg" /></div>
                 <div><img src="img/LOGO/polo.png" /></div>
                 <div><img src="img/LOGO/Calvin_Klein_Master_Brand_logo_black.jpeg" /></div>
+                <div><img src="img/LOGO/Logo Longchamp Paris Black and Safe Area.png" /></div>
+                <div><img src="img/LOGO/logonero_ferragamo.jpeg" /></div>
+                <div><img src="img/LOGO/tom-ford-eyewear-logo-vector.png" /></div>
+                <div><img src="img/LOGO/swarovski.png" /></div>
+                <div><img src="img/LOGO/Prada-Logo.png" /></div>
+                <div><img src="img/LOGO/prada.png" /></div>
+                <div><img src="img/LOGO/miumiu.png" /></div>
+                <div><img src="img/LOGO/Coach-Logo.png" /></div>
+                <div><img src="img/LOGO/versace.png" /></div>
+                <div><img src="img/LOGO/ps_tiffany_01.jpeg" /></div>
+                <div><img src="img/LOGO/Bvlgari-Logo.png" /></div>
+                <div><img src="img/LOGO/carrera-eyewear-logo-vector.png" /></div>
+                <div><img src="img/LOGO/Hugo-Boss-Logo-1924-2021.png" /></div>
+                <div><img src="img/LOGO/kate spade logo.png" /></div>
+                <div><img src="img/LOGO/Fossil-Logo.jpeg" /></div>
+                <div><img src="img/LOGO/LOGO_UNDER_ARMOUR.png" /></div>
+                <div><img src="img/LOGO/Jimmy choo.png" /></div>
+                <div><img src="img/LOGO/Coast Logo w palm_.png" /></div>
+                <div><img src="img/LOGO/dvf-logo-21F561FC7C-seeklogo.com.png" /></div>
+                <div><img src="img/LOGO/Seiko-Logo.png" /></div>
+                <div><img src="img/LOGO/police.svg" /></div>
+                <div><img src="img/LOGO/Furla-logo.jpeg" /></div>
+                <div><img src="img/LOGO/mauijim.webp" /></div>
+                <div><img src="img/LOGO/Silhouette_logo_final.png" /></div>
+                <h3>品牌镜片</h3>
+                <div><img src="img/LOGO/zeiss.jpeg" /></div>
+                <div><img src="img/LOGO/hoya.png" /></div>
+                <div><img src="img/LOGO/shamir.png" /></div>
+                <h3>隐形眼镜</h3>
+                <div><img src="img/LOGO/alcon.png" /></div>
+                <div><img src="img/LOGO/bauschLomb.png" /></div>
+                <div><img src="img/LOGO/copperVision.jpg" /></div>
+                <div><img src="img/LOGO/johnsonJohnson.png" /></div>
+                <h3>自有品牌</h3>
+                <div><img src="img/logo.png" /></div>
             </div>
-            <a href="brand.html"><div id="more-icon">➕</div></a>
+            <div id="more-icon" onclick="brandSwich();">➕</div>
         </div><br/>
     </section>
     <div class="row">
@@ -190,11 +237,6 @@
         <a href="tel:18888888888"><div class="book-but">来电咨询</div></a>
         </div>
     </div>
-    <div id="my-brand">
-        <div class="row-p">Optimax在眼镜行业已有30年扎实积淀，拥有独家眼镜镜框，镜片的专业供链，掌握着第一手优且全的眼镜产品资源。为了给客人提供更适合佩戴而高性价比高的眼科产品，和光甄选和整合了多年合作的品质镜框及镜片品牌，设计和推出了符合本地消费者最为适用的不同价格档位的最优产品。</div>
-        <div class="row-p">在当下市场，Optimax自有品牌系列，具有质量上乘，价位最优，佩戴大方且美观等多方面具有竞争力的优势，一定能给顾客带来不一样的满意体验。</div>
-        <div class="row-p">感谢每一位客人对Optimax的信赖，Optimax一定不负众望，力争更优、更好。</div>
-    </div>
     <div class="top-video">
         <video muted autoplay loop >
             <source src="https://cloud.sunshadeseyewear.com.au/index.php/s/nHOdVZMoijqmXVr/download" type="video/mp4">
@@ -207,9 +249,11 @@
                 <h3>社交媒体</h3>
                 <a href="https://www.facebook.com/profile.php?id=100087103927812"><p>🚀FaceBook</p></a>
                 <a href="https://www.instagram.com/optimaxoptometrists/"><p>📷Instagram</p></a>
+                <a href="#"><p>📕小红书</p></a>
             </div>
             <div class="f-col">
                 <h3>联系方式</h3>
+                <p>地址：</p>
                 <a href="tel:18888888888"><p>📱18888888888</p></a>
                 <a href="mailto:boss@gmail.com"><p>📧boss@gmail.com</p></a>
             </div>
