@@ -1,5 +1,5 @@
 let domB = document.getElementById("show-b");
-let urlList = ['Social_2.jpg', 'Social_3.jpg', 'Social_4.jpg'];
+let urlList = ['Social_2.jpg', 'Social_6.jpeg', 'Social_4.jpg', 'Social_7.jpeg'];
 let urlIndex = 1;
 function loopImgB() {
     setTimeout( () => {
@@ -23,7 +23,6 @@ let hideLi = function() {
         element.className = "li blur hide";
     });
 }
-
 
 //移动端目录处理逻辑
 const mNavEvent = function() {
@@ -68,6 +67,18 @@ const showBgBox = () => {
     bgBox.style.display = "flex";
 }
 
+//brand-icon 展示功能
+function brandSwich() {
+    if(document.getElementById("more-icon").innerText === "➕") {
+        document.getElementById("brand-icon").style.height = "fit-content";
+        document.getElementById("more-icon").innerText = "➖";
+    }
+    else if(document.getElementById("more-cion").innerText === "➖") {
+        document.getElementById("brand-icon").style.height = "270px";
+        document.getElementById("more-icon").innerText = "➕";
+    }
+}
+
 //bar-img 事件处理
 let urlListC = ['img/sale43a.jfif', 'img/sale43b.jfif'];
 let domC = document.getElementById("show-c");
@@ -87,22 +98,3 @@ let menuContent = "";
 for(let i=0; i<urlListC.length; i++) { menuContent += "<div onclick='changeImgC(" + i + ", false)'></div>";}
 document.getElementById("c-menu").innerHTML = menuContent;
 changeImgC(0, true);
-
-//brand-icon 事件处理
-let brandIcon = document.getElementById("brand-icon");
-let moreIcon = document.getElementById("more-icon");
-let brandIconMoment = false;
-const showAllIcon = function() {
-    if(brandIconMoment) {
-        moreIcon.innerHTML = "➕";
-        brandIcon.style.height = "";
-        console.log("+");
-        brandIconMoment = false;
-    }
-    else {
-        moreIcon.innerHTML = "➖";
-        console.log("-");
-        brandIcon.style.height = "fit-content";
-        brandIconMoment = true;
-    }
-}
