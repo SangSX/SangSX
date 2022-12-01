@@ -287,7 +287,7 @@ footer {
 }
 .row {
     width: 90vw;
-    height: 40vw;
+    height: 44vw;
     position: relative;
     margin: 40px auto 80px auto;
 }
@@ -305,7 +305,6 @@ footer {
     left: 60vw;
     width: 30vw;
     height: 30vw;
-    padding-top: 6vw;
 }
 .info-b p {
     text-align: center;
@@ -600,7 +599,7 @@ footer {
     }
 
     .row {
-        height: 800px;
+        height: 880px;
     }
     .info-a {
         width: 90vw;

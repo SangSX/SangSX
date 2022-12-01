@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/op.png" type="image/x-icon">
+    <title>OPTIMAX | Book</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body { 
+            margin: 0;
+            background-color: #455a4f;
+        }
+        #logo {
+            width: 360px;
+            height: 90px;
+            position: relative;
+            top: 80px;
+            margin: 50px auto 0 auto;
+            background-image: url("img/logo2.png");
+            background-size: 100% 100%;
+            background-color: #455a4f;
+        }
+        .text-ul {
+            width: 70vw;
+            margin: 90px auto;
+            padding: 0;
+        }
+        .text-ul li {
+            text-align: center;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 3px;
+            font-weight: 800;
+            list-style: none;
+            margin-top: 2em;
+            color: #e1de88;
+        }
+        .text-ul p {
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 30px;
+            text-indent: 2em;
+            padding: 10px 1em 10px 1em;
+            color: #d8efe8;
+            text-align: justify;
+            padding: 0;
+        }
+        .text-ul hr {
+            width: 30%;
+            margin: 2em auto 2em auto;
+        }
+        .footer {
+            min-height: 100px;
+            width: fit-content;
+            position: relative;
+            margin: 0 auto;
+        }
+        .center-img {
+            width: fit-content;
+            position: relative;
+            margin: 2em auto;
+        }
+        .center-img > img {
+            width: 600px;
+            height: auto;
+        }
+        @media screen and (max-width: 900px) {
+            #logo {
+                width: 280px;
+                height: 70px;
+            }
+            .text-ul {
+                width: 94vw;
+            }
+            .text-ul li {
+                margin-top: 1.2em;
+            }
+            .text-ul p {
+                font-size: 17px;
+            }
+            .center-img > img {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#logo"><div id="go-top" style="display: none;"><span>^</span></div></a>
+        <!--导航栏部分--menu start-->
+
+    <div id="m-nav" style="right: -300px;" onclick="mNavEvent()">
+        <a href="index.html"><div class="nav-name" style="font-size: 14px; color: #3db981">Lan:English</div></a>
+        <div>
+            <a href="cn_book.html"><div class="nav-name">在线预约</div></a>
+        </div>
+        <div>
+            <a href="cn_about.html"><div class="nav-name">关于我们</div></a>
+        </div>
+        <div>
+            <div class="nav-name">产品</div>
+            <a href="cn_brand.html">
+            <div class="m-li">品牌镜框</div>
+            <div class="m-li">品牌镜片</div>
+            <div class="m-li">隐形眼镜</div>
+            <div class="m-li">自有品牌</div>
+            </a>
+        </div>
+        
+        <div>
+            <div class="nav-name">服务</div>
+            <a href="cn_sever.html">
+            <div class="li blur">眼科全面检查</div>
+            <div class="m-li">近视防控|儿童视力检查</div>
+            <div class="m-li">青光眼检查|白内障检查</div>
+            <div class="m-li">糖尿病眼科检查|散瞳检查</div>
+            <div class="m-li">OTC视网膜3D扫描</div>
+            <div class="m-li">广角眼底扫描</div>
+            <div class="m-li">视野检查|生物测量检查</div>
+            <div class="m-li">眼压测试</div>
+            <div class="m-li">干眼症和其他常见眼科症状</div>
+            <div class="m-li">隐形眼镜配戴测试</div>
+            <div class="m-li">私人保险报销</div>
+            <div class="m-li">配镜立等可取</div>
+            </a>
+        </div>
+        <div>
+            <div class="nav-name">促销活动</div>
+            <div class="m-li">每日优惠</div>
+            <div class="m-li">节日优惠</div>
+        </div>
+        
+        <div>
+            <div class="nav-name">联系方式</div>
+            <a href="tel:03 8838 9826">
+                <div class="m-li">03 8838 9826</div>
+            </a>
+            <a href="mailto:info@optimaxoptometrists.com.au">
+                <div class="m-li">info@optimaxoptometrists.com.au</div>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100087103927812">
+                <div class="m-li">🚀FaceBook</div>
+            </a>
+            <a href="https://www.instagram.com/optimaxoptometrists/">
+                <div class="m-li">📷Instagram</div>
+            </a>
+        </div><br/>
+    </div>
+    <header>
+        <div id="top-nav">
+            <div id="nav-icon" onclick="mNavEvent()">
+                <svg t="1661308771911" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3507" width="48" height="48"><path d="M512 1024a512 512 0 1 1 512-512 512 512 0 0 1-512 512z m0-992a480 480 0 1 0 480 480A480 480 0 0 0 512 32zM320 624h384v32H320v-32z m0-128h384v32H320v-32z m0-128h384v32H320v-32z" p-id="3508" fill="#e6e6e6"></path></svg>
+            </div>
+            <a href="cn_index.html"><div id="top-title"></div></a>
+            <div class="r-nav">
+                <div class="nav-box">
+                    <a href="index.html">
+                        <div class="nav-name">
+                            <span style="font-size: 14px; color: #3db981">Lan:English</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-box">
+                    <a href="cn_about.html">
+                        <div class="nav-name">
+                            <span>关于我们</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="nav-box">
+                    <div class="nav-name">
+                        <span>产品</span>
+                        <a href="cn_brand.html">
+                        <div class="li blur">品牌镜框</div>
+                        <div class="li blur">品牌镜片</div>
+                        <div class="li blur">隐形眼镜</div>
+                        <div class="li blur">自有品牌</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="nav-name">
+                        <span>服务</span>
+                        <a href="cn_sever.html">
+                        <div class="li blur">眼科全面检查</div>
+                        <div class="li blur">近视防控|儿童视力检查</div>
+                        <div class="li blur">青光眼检查|白内障检查</div>
+                        <div class="li blur">糖尿病眼科检查|散瞳检查</div>
+                        <div class="li blur">OTC视网膜3D扫描</div>
+                        <div class="li blur">广角眼底扫描</div>
+                        <div class="li blur">视野检查|生物测量检查</div>
+                        <div class="li blur">眼压测试</div>
+                        <div class="li blur">干眼症和其他常见眼科症状</div>
+                        <div class="li blur">隐形眼镜配戴测试</div>
+                        <div class="li blur">私人保险报销</div>
+                        <div class="li blur">配镜立等可取</div></a>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="nav-name">
+                        <a href="cn_contact.html"><span>联系方式</span></a>
+                        <a href="tel:03 8838 9826">
+                            <div class="li blur">03-8838-9826</div>
+                        </a>
+                        <a href="mailto:info@optimaxoptometrists.com.au">
+                            <div class="li blur">info@optimaxoptometrists.com.au</div>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100087103927812">
+                            <div class="li blur">🚀FaceBook</div>
+                        </a>
+                        <a href="https://www.instagram.com/optimaxoptometrists/">
+                            <div class="li blur">📷Instagram</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <a href="cn_book.html">
+                        <div class="nav-name" onclick=";">
+                            <span>在线预约</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--导航栏部分--menu end-->
+    <a href="index.html"><div id="logo"></div></a>
+    <div>
+        <ul class="text-ul">
+            <li>在线预约</li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+    <script src="main.js"></script>
+</body>
+</html>

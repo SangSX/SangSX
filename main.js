@@ -73,7 +73,7 @@ function brandSwich() {
         document.getElementById("brand-icon").style.height = "fit-content";
         document.getElementById("more-icon").innerText = "➖";
     }
-    else if(document.getElementById("more-cion").innerText === "➖") {
+    else {
         document.getElementById("brand-icon").style.height = "270px";
         document.getElementById("more-icon").innerText = "➕";
     }
