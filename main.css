@@ -172,7 +172,7 @@ footer {
     font-size: 28px;
     font-weight: 800;
     text-align: center;
-    letter-spacing: 3vw;
+    letter-spacing: 3px;
     line-height: 2em;
     padding: 6vw 0 0 0;
     margin: 0;
@@ -183,7 +183,7 @@ footer {
     font-size: 22px;
     font-weight: 600;
     text-align: center;
-    letter-spacing: 1vw;
+    letter-spacing: 2px;
     line-height: 2em;
     padding: 1em 0 0 0;
     margin: 0;
@@ -332,10 +332,9 @@ footer {
     font-size: 20px;
     margin-top: 20px;
     font-weight: 800;
-    text-align: center;
     color: #ede3e7;
     display: inline-block;
-    padding: 0;
+    padding-left: 1em;
     transition: .6s;
 }
 .li {
@@ -345,7 +344,7 @@ footer {
     line-height: 3em;
     color: #baccd9;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     display: none;
     padding: 0 1em 0 1em;
     background-color: #15231b;
@@ -362,7 +361,7 @@ footer {
 
 .m-li {
     height: 1.8em;
-    text-align: center;
+    padding-left: 1em;
     color: #d3ecff;
     cursor: pointer;
 }
