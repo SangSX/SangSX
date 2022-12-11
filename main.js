@@ -1,5 +1,5 @@
 let domB = document.getElementById("show-b");
-let urlList = ['Social_9.jpeg', 'Social_2.jpg', 'Social_6.jpeg', 'Social_8.jpeg', 'Social_7.jpeg'];
+let urlList = ['Social_2.jpg', 'Social_6.jpeg', 'Social_8.jpeg', 'Social_9.jpeg', 'Social_7.jpeg'];
 let urlIndex = 1;
 function loopImgB() {
     setTimeout( () => {

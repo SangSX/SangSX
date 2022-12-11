@@ -253,7 +253,8 @@ footer {
 
 #pop-card {
     width: 300px;
-    height: 200px;
+    min-height: 200px;
+    height: fit-content;
     position: fixed;
     right: 20px;
     bottom: 10px;
@@ -338,7 +339,7 @@ footer {
     transition: .6s;
 }
 .li {
-    width: 200px;
+    width: 240px;
     height: 3em;
     margin-left: -20px;
     line-height: 3em;
