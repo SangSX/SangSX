@@ -80,7 +80,7 @@ function brandSwich() {
 }
 
 //bar-img 事件处理
-let urlListC = ['img/sale-43-20230505.png', 'img/sale43b.jfif'];
+let urlListC = ['img/sale-43-20230601.jpg', 'img/sale-43-20230531.jpg'];
 let domC = document.getElementById("show-c");
 function changeImgC(index, loop) {
     let menu = document.getElementById("c-menu").children;
